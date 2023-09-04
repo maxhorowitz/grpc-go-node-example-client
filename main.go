@@ -28,6 +28,7 @@ func main() {
 	firstName := &pb.FirstName{
 		Name: "max",
 	}
+	log.Info(fmt.Sprint("sending max"))
 	lastName, err := registryClient.GetLast(context.Background(), firstName, callOpts...)
 	log.Info(fmt.Sprint("received ", string(lastName.GetName())))
 }
