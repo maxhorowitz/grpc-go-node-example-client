@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	"math/rand"
+	"fmt"
 	"os"
 
 	"github.com/hashicorp/go-hclog"
@@ -16,23 +16,18 @@ func main() {
 	// TODO (maxhorowitz): Do we want any dial options?
 	// ANSWER: We do want dial options to set gRPC transport security. Need to learn about this.
 	dialOpts := []grpc.DialOption{grpc.WithInsecure()}
-	conn, err := grpc.Dial(":9092", dialOpts...)
+	conn, err := grpc.Dial("localhost:8080", dialOpts...)
 	if err != nil {
 		log.Error("Unable to dial connection", "error", err)
 		os.Exit(1)
 	}
 
-	client := pb.NewMessengerClient(conn)
+	registryClient := pb.NewRegistryClient(conn)
 	callOpts := []grpc.CallOption{}
-	stream, err := client.Connect(context.Background(), callOpts...)
-	if err != nil {
-		log.Error("Unable for client to call access", "error", err)
-		os.Exit(1)
-	}
-	req := &pb.Req{
-		Id:   int32(rand.Uint32()),
-		Data: []byte("this is a test message"),
-	}
-	stream.Send(req)
 
+	firstName := &pb.FirstName{
+		Name: "max",
+	}
+	lastName, err := registryClient.GetLast(context.Background(), firstName, callOpts...)
+	log.Info(fmt.Sprint("received ", string(lastName.GetName())))
 }

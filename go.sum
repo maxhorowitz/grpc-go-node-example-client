@@ -17,8 +17,10 @@ github.com/mattn/go-colorable v0.1.12/go.mod h1:u5H1YNBxpqRaxsYJYSkiCWKzEfiAb1Gb
 github.com/mattn/go-isatty v0.0.12/go.mod h1:cbi8OIDigv2wuxKPP5vlRcQ1OAZbq2CE4Kysco4FUpU=
 github.com/mattn/go-isatty v0.0.14 h1:yVuAays6BHfxijgZPzw+3Zlu5yQgKGP2/hcQbHb7S9Y=
 github.com/mattn/go-isatty v0.0.14/go.mod h1:7GGIvUiUoEMVVmxf/4nioHXj79iQHKdU27kJ6hsGG94=
-github.com/maxhorowitz/grpc-go-node-example-api v0.0.0-20230825151349-6d05d5af5aeb h1:ch4AFAPHvNhIQwYMgD0kSHSTTLjgKcSGSXsExG0UWo8=
-github.com/maxhorowitz/grpc-go-node-example-api v0.0.0-20230825151349-6d05d5af5aeb/go.mod h1:P3Q5KokW4H4wqKqC/Ixd9iRNq2Tmb0CZBqiPRCso3rw=
+github.com/maxhorowitz/grpc-go-node-example-api v0.0.0-20230904043805-427f2aa1c810 h1:O5QvrTkoQ2K7SbJoLzdTh3NLed9yPEvKgV5p4Ms0M+w=
+github.com/maxhorowitz/grpc-go-node-example-api v0.0.0-20230904043805-427f2aa1c810/go.mod h1:P3Q5KokW4H4wqKqC/Ixd9iRNq2Tmb0CZBqiPRCso3rw=
+github.com/maxhorowitz/grpc-go-node-example-api v0.0.0-20230904045946-02a206832dd5 h1:nbSX6sL2NDpc39f9BvyjZ4K2UEOo6VKqmCCJ23qR3po=
+github.com/maxhorowitz/grpc-go-node-example-api v0.0.0-20230904045946-02a206832dd5/go.mod h1:P3Q5KokW4H4wqKqC/Ixd9iRNq2Tmb0CZBqiPRCso3rw=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
